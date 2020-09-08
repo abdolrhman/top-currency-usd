@@ -101,8 +101,10 @@ so instead for each http call i get the data and merge it <br>
 
 ## Images Work flow
 > check the postman result with each asset contain rank and price
+
 ![Alt Text](https://media.giphy.com/media/S5iQjzLXDnynkKyHcU/giphy.gif)
 
 > check 200 records exist for the two tables
-> check for each cycle of cron job, updating records if needed, with order and rank in respect 
+> check for each cycle of cron job, updating records if needed, with order and rank in respect
+ 
 ![Alt Text](https://media.giphy.com/media/Tk1By3jMt0LtJXdIpL/giphy.gif)
