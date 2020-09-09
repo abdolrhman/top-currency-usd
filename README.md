@@ -4,6 +4,7 @@ Getting the top Currency prices in USD with support to limitation and more featu
 
 ## Table of Contents
 - [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
 - [Install](#install)
 - [Objectives](#objectives)
 - [Implementation Solution](#implementation-solution)
@@ -16,6 +17,31 @@ This is an app to get Top assets prices in usd, build in top of 3 independent se
 - limitation
 - up to date information
 - speedy 
+
+## Folder Structure
+
+    .
+    ├── ...
+    ├── src                    # All the three modules being hold there
+    │   ├── api                # Hold the API service 
+    │       ├── db                # DB Connection Source point
+    │       ├── coin_prices_receiver    # call from database all the coin prices
+    │       ├── top_assets_prices_handler   # Query the top_assets and geenrate the end-result
+    │   ├── procuder         # Holds the Two Services that gets the data
+    │       ├── coins_prices
+    │           ├── db            # DB connection
+    │           ├── model         # Hold the struct model for coins prices and some helper methods
+    │           ├── data_source   # Hold the struct model for coins prices and returns the data from the API
+    │           ├── handler       # Saves the API data, to the database
+    │       ├── top_assets
+    │           ├── db            # DB connection
+    │           ├── model            # Hold the struct model for coins prices and some helper methods
+    │           ├── data_source   # Hold the struct model for coins prices and returns the data from the API
+    │           ├── handler       # Saves the API data, to the database
+    │   
+    └── ...
+    
+- Note, that it may not be the best structure, for goLang.
 
 ### Installing
 
