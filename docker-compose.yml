@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  pg:
+    image: postgres:12.0
+    restart: on-failure
+    env_file:
+      - .env
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    volumes:
+      - topcoinsvolume:/var/lib/postgresql/data
+      - ./db/scripts:/docker-entrypoint-initdb.d/
