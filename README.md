@@ -60,6 +60,8 @@ service 2, will push into table : top_assets
 > the rank and the API provider Page were tricky, you can see the code for more information, but data with limited to max 100 per 1 page, and for rank we need to make it be built in a matter to make it easy to update documents with the new rank in future
 And then, the API service, consume the data in away in which
 
+- Integration or test not implemented but intended to do
+- docker config not tested
 
 ## How Edge-cases being Handled
 
