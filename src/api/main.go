@@ -29,17 +29,4 @@ func main() {
 	if err != nil {
 		log.Fatalf("Server Failed to start: %v", err)
 	}
-	//pgDb := db.Connect()
-	//limit := 10
-	//
-	//result := handler(pgDb, limit)
-	//fmt.Println(result)
-
 }
-
-//func commonMiddleware(next http.Handler) http.Handler {
-//	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-//		w.Header().Add("Content-Type", "application/json")
-//		next.ServeHTTP(w, r)
-//	})
-//}
